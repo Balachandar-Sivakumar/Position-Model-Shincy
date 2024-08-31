@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training </title>
+    <link rel="stylesheet" href="practice1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+      <div class="container1" id="container">
+
+
+             <div class="header1">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="mini-container">
+
+               <button class="main-button" id="mybtn">Click Here</button>
+
+            </div> 
+
+
+
+         <div class="Tabel-container">
+            
+                    <form id="mymodal"  class="flex-item">
+                        
+                        <div class="item">
+
+                        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+
+               
+                
+                        <div class="box">
+                            <input type="text" name="Name" id="name" required>
+
+                            <label class=" box1" for="name">Name:</label>
+                        </div>
+                    
+                        
+                        <div class="box">
+                            <input type="email" name="gmail" id="gmail" required>
+                            <label class=" box2"  for="gmail">Gmail:</label>
+                           
+                    
+                        </div>
+
+
+                  
+                       <div class="box">
+                        <textarea name="text" id="text-area"></textarea>
+
+                        <label class="box3" for="text-area">Message:</label>
+                        
+                       </div>
+
+                       <div>
+                        <input  class="submit" type="submit">
+                       </div>
+                  
+                        </div>
+                 
+                   
+                
+                    </form>
+        </div>
+
+
+       
+        </div>
+
+     </div> 
+
+
+     <script>
+        var modal = document.getElementById("mymodal");
+        var btn = document.getElementById("mybtn");
+         var span = document.getElementsByClassName("close")[0];
+        
+        console.log(btn);
+        console.log(modal);
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+    
+         span.onclick = function() {
+             modal.style.display = "none";
+         }
+    
+        window.onclick = function(event) {
+            console.log(event.target.id);
+            if (event.target.id == "container") {
+                modal.style.display = "none";
+            }
+        }
+    </script> 
+
+</body>
+</html>
